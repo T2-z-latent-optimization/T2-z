@@ -1,0 +1,32 @@
+{
+  "task": "mass_friction",
+  "camera_resolution": 224,
+  "fps": 20,
+  "chunk": {
+    "start": 0,
+    "end": 60,
+    "stride": 1,
+    "observation_timing": "pre_step"
+  },
+  "tracking": {},
+  "support_actions": [
+    0,
+    4
+  ],
+  "native_last_frame": 59,
+  "source_script": "scripts/collect_libero_two_box_mass_friction_balanced100env_9action_lerobot_2026-07-18_hai-machine.py",
+  "source_config": "configs/libero_two_box_mass_friction_balanced100env_9action_2026-07-18_hai-machine.json",
+  "inference_config": "configs/inference/sim_mass_friction.yaml",
+  "default_case": {
+    "pair_index": 0
+  },
+  "physics": {
+    "projectile_mass_kg": 0.25,
+    "projectile_and_table_mu": 0.01,
+    "target_friction": "original priority router, target priority 10, projectile 9, table 0",
+    "environment_schedule": "100 selected balanced pairs from 20 masses x 20 frictions; original pair-selection seed",
+    "actions": "unchanged nine collision launches, controller scale 4",
+    "native_recorded_rows": 60,
+    "evaluation_padding": "frame 60 repeats row 59; original 60 native actions"
+  }
+}

@@ -1,0 +1,24 @@
+task: sim_mass_collision
+training_configs:
+  ours: configs/ours/sim_mass_collision.yaml
+  standard: configs/baselines/standard/sim_mass_collision.yaml
+  dino: configs/baselines/dino/sim_mass_collision.yaml
+  ttt: configs/baselines/ttt/sim_mass_collision.yaml
+  lora: configs/baselines/lora/sim_mass_collision.yaml
+dataset_metadata_path: datasets/sim_mass_collision/evaluation/metadata.jsonl
+environment_key: environment_index
+support_indices: []
+query_indices: []
+inference:
+  num_inference_steps: 50
+  cfg_scale: 1.0
+  video_light_augmentation_enabled: false
+ours:
+  num_inference_steps: 25
+  ttt_context_fp32: true
+  stage2_inner_steps: 40
+  stage2_inner_lr_schedule: 3.0:10,1.5:10,0.5:10,0.15:10
+  stage2_context_clamp_min: 0.0
+  stage2_context_clamp_max: 1.0
+  ttt_support_loss_reduction: mean
+  ttt_support_gradient_accumulation: true

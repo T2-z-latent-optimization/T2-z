@@ -1,0 +1,28 @@
+method: contrast
+parameters:
+  initial_x: 118.0
+  initial_y: 103.0
+  roi_x_min: 77
+  roi_x_max: 167
+  roi_y_min: 88
+  roi_y_max: 216
+  search_x_radius: 25
+  search_y_backward: 10
+  search_y_forward: 30
+  missing_search_y_forward: 45
+  outer_ring_margin: 5
+  minimum_initial_candidate_y: 99.0
+  minimum_contrast: 0.025
+  initial_contrast_ratio: 0.3
+  maximum_tracking_jump_px: 55.0
+  interpolation_grace_frames: 3
+  offscreen_min_y: 185.0
+  offscreen_velocity_min_y: 165.0
+  offscreen_velocity_threshold: 1.5
+  rectangle_half_sizes: [[9, 5], [7, 8], [11, 7]]
+  contrast_score_weight: 5.0
+  continuity_score_divisor: 25.0
+  lateral_score_divisor: 80.0
+  position_score_divisor: 600.0
+  movement_threshold: 7.0
+  recent_history_frames: 4

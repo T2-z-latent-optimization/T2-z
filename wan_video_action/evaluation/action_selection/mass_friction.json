@@ -1,0 +1,13 @@
+{
+  "task": "mass_friction",
+  "outcome_kind": "point",
+  "object_index": 0,
+  "terminal_window": 5,
+  "missing_prediction_policy": "failure",
+  "aggregation": "equal_targets_then_equal_environments",
+  "targets": [
+    {"name": "short", "kind": "y_threshold", "threshold": 0.62, "selection": "first_crossing", "score": "exact_first_crossing"},
+    {"name": "medium", "kind": "y_threshold", "threshold": 0.75, "selection": "first_crossing", "score": "exact_first_crossing"},
+    {"name": "long", "kind": "y_threshold", "threshold": 0.92, "selection": "first_crossing", "score": "exact_first_crossing"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "task": "mass_balance",
+  "outcome_kind": "scalar",
+  "object_index": 0,
+  "terminal_window": 5,
+  "missing_prediction_policy": "exclude_incomplete",
+  "aggregation": "equal_reachable_decisions",
+  "targets": [
+    {"name": "balanced", "kind": "interval", "range": [-3.0, 3.0], "selection": "boundary_crossing", "score": "target_reach"}
+  ]
+}

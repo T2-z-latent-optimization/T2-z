@@ -1,0 +1,14 @@
+{
+  "task": "gravity",
+  "outcome_kind": "point",
+  "object_index": 0,
+  "terminal_window": 5,
+  "missing_prediction_policy": "exclude_incomplete",
+  "aggregation": "equal_reachable_decisions",
+  "nearest_tiebreak": "action_index_string",
+  "targets": [
+    {"name": "near", "kind": "rectangle", "region": [0.525, 0.555, 0.535, 0.585], "selection": "nearest", "score": "target_reach"},
+    {"name": "middle", "kind": "rectangle", "region": [0.585, 0.625, 0.57, 0.625], "selection": "nearest", "score": "target_reach"},
+    {"name": "far", "kind": "rectangle", "region": [0.795, 0.845, 0.62, 0.69], "selection": "nearest", "score": "target_reach"}
+  ]
+}

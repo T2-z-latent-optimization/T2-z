@@ -1,0 +1,5 @@
+from .persistent_environment_memory import SPEC as PERSISTENT_ENVIRONMENT_MEMORY
+
+SPECS = (PERSISTENT_ENVIRONMENT_MEMORY,)
+
+__all__ = ["PERSISTENT_ENVIRONMENT_MEMORY", "SPECS"]

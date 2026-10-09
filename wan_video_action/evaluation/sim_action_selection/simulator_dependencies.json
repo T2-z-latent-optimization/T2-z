@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "repositories": [
+    {
+      "directory": "TTT4dynamics",
+      "url": "git@github.com:huagailuowen/TTT4dynamics.git",
+      "revision": "e7c696389719f479d7f0f705c64e1eee1899ec44",
+      "required": [
+        "ttt4dynamics/push_box_libero.py",
+        "scripts/collect_libero_push_box_rollout_target_lerobot_dataset.py",
+        "scripts/collect_libero_push_box_event_tap_segmented80_10action_lerobot_2026-07-05_hai-machine.py",
+        "configs/libero_push_box_70fric_9action_fixed_scene_highforce_2026-07-02_hai-machine.json",
+        "scripts/collect_libero_change_gravity_segmented80_10speed_lerobot_v21_2026-07-10_hai-machine.py",
+        "scripts/collect_libero_two_box_mass_linear_theory_30mass_noleak_lerobot_2026-08-27_hai-machine.py",
+        "configs/libero_two_box_mass_linear_theory_30mass_noleak_2026-08-27_hai-machine.json",
+        "scripts/collect_libero_two_box_collision_9speed_20mass_linear_theory_distance_lerobot_2026-07-17_hai-machine.py",
+        "scripts/render_libero_two_box_collision_mass_demo_2026-07-16_hai-machine.py",
+        "scripts/render_libero_push_box_mass_oracle_force_and_lowkp_mu0040_2026-07-16_hai-machine.py",
+        "scripts/render_libero_push_box_mass_sweep_mu0080_mid40cm_2026-07-16_hai-machine.py",
+        "scripts/collect_libero_push_box_formal_6fric_50pair_35_35_direct_lerobot_hai-machine.py",
+        "scripts/collect_libero_mass_balance_30ratio_combined_split_lerobot_2026-09-02_hai-machine.py",
+        "configs/mass_balance_workspace_random_30ratio_15support_450eps_combined_split_2026-09-02_hai-machine.json",
+        "assets/short_lifting_rod_2026-07-21_hai-machine.xml",
+        "scripts/collect_libero_two_box_mass_friction_balanced100env_9action_lerobot_2026-07-18_hai-machine.py",
+        "configs/libero_two_box_mass_friction_balanced100env_9action_2026-07-18_hai-machine.json",
+        "scripts/collect_libero_plus_push_box_segmented40_3env_matched_physics_lerobot_2026-07-27_hai-machine.py",
+        "configs/libero_plus_push_box_event80_matched_physics_5randombackground_30friction_10action_1500eps_adaptive_end_2026-08-19_hai-machine.json",
+        "scripts/collect_libero_plus_push_box_official_assets_full_trajectory_preview_lerobot_2026-07-18_hai-machine.py",
+        "scripts/collect_libero_plus_push_box_full_trajectory_preview_lerobot_2026-07-18_hai-machine.py",
+        "scripts/collect_libero_plus_push_box_native_gripper_preview_lerobot_2026-07-18_hai-machine.py",
+        "configs/libero_plus_push_box_official_scenes_full_trajectory_9demo_2026-07-18_hai-machine.json",
+        "scripts/collect_libero_push_box_board_touch_20fric_30action_fixed5cm_A050_lerobot_2026-07-17_hai-machine.py",
+        "scripts/collect_libero_push_box_board_touch_fixed5cm_ramp_latched_brake_probe_lerobot_2026-07-17_hai-machine.py",
+        "scripts/collect_libero_push_box_board_touch_fixed_travel_probe_lerobot_2026-07-17_hai-machine.py",
+        "scripts/collect_libero_push_box_board_touch_20fric_30action_full8_A450_lerobot_2026-07-17_hai-machine.py",
+        "scripts/render_libero_push_box_gripped_board_gap_vs_touch_probe_2026-07-17_hai-machine.py",
+        "scripts/render_libero_push_box_gripped_board_alignment_probe_2026-07-17_hai-machine.py"
+      ]
+    },
+    {
+      "directory": "LIBERO",
+      "url": "https://github.com/Lifelong-Robot-Learning/LIBERO.git",
+      "revision": "8f1084e3132a39270c3a13ebe37270a43ece2a01",
+      "required": ["libero/libero/envs/__init__.py", "libero/libero/assets"]
+    },
+    {
+      "directory": "LIBERO-plus",
+      "url": "https://github.com/sylvestf/LIBERO-plus.git",
+      "revision": "4976dc30028e805ff8094b55501d532c48fec182",
+      "required": ["libero/libero/envs/__init__.py"]
+    },
+    {
+      "directory": "FastWAM-TTT",
+      "url": "git@github.com:huagailuowen/FastWAM-TTT.git",
+      "revision": "8c7371dc7330b8c2446a3a93431a7b9aecb5c9e7",
+      "required": ["src/fastwam/datasets/lerobot/lerobot/lerobot_dataset.py"]
+    },
+    {
+      "directory": "FastWAM",
+      "url": "git@github.com:huagailuowen/FastWAM-TTT.git",
+      "revision": "8c7371dc7330b8c2446a3a93431a7b9aecb5c9e7",
+      "required": ["src/fastwam/datasets/lerobot/lerobot/lerobot_dataset.py"]
+    },
+    {
+      "directory": "robomme_benchmark",
+      "url": "git@github.com:huagailuowen/RoboMME.git",
+      "revision": "85e7367a934ce305aae948cb058dce78ec69e3c1",
+      "required": [
+        "scripts/collect_causal_light_switch_independent_controls_random8_lerobot_hai_machine.py",
+        "scripts/collect_causal_light_switch_random8_lerobot_hai_machine.py",
+        "scripts/collect_causal_light_switch_lerobot_hai_machine.py",
+        "src/robomme/robomme_env/CausalLightSwitchDIYHaiMachine.py",
+        "src/robomme/robomme_env/utils/planner_fail_safe.py"
+      ]
+    }
+  ],
+  "plus_assets": {
+    "url": "https://huggingface.co/datasets/Sylvest/LIBERO-plus/resolve/dd2bd61b7d9a6fef1abc52d606e983b41886a149/assets.zip",
+    "sha256": "96764a4bfbdaea98d4411598caeab235458318fe0f549611b93d1a323027b3cf",
+    "archive_size_bytes": 6395849578,
+    "overlay_source": "TTT4dynamics/assets/libero_plus_event80_overlay",
+    "required": [
+      "stable_hope_objects/butter/butter.xml",
+      "stable_hope_objects/cream_cheese/cream_cheese.xml",
+      "stable_hope_objects/chocolate_pudding/chocolate_pudding.xml",
+      "scenes/libero_kitchen_tabletop_base_style.xml",
+      "scenes/ph/Tiles01_COL_VAR2_6K.png",
+      "scenes/ph/Tiles01_COL_VAR1_6K.png",
+      "scenes/ph/CliffDesert006_COL_VAR1_HIRES.png",
+      "scenes/ph/WoodFine001_COL_6K.png",
+      "textures/Marble01_COL_3K.png",
+      "textures/WoodFine001_ALBEDO_6K.png",
+      "textures/FabricDenim003_COL_VAR1_HIRES.png"
+    ]
+  },
+  "environments": [
+    {
+      "directory": "TTT4dynamics",
+      "python": "3.10.20",
+      "requirements": "requirements-simulator-libero.txt",
+      "editable_sources": ["LIBERO", "TTT4dynamics", "FastWAM-TTT"]
+    },
+    {
+      "directory": "robomme_benchmark",
+      "python": "3.11.15",
+      "requirements": "requirements-simulator-robomme.txt",
+      "editable_sources": ["robomme_benchmark"]
+    }
+  ]
+}

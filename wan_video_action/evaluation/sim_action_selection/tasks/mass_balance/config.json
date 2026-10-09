@@ -1,0 +1,61 @@
+{
+  "task": "mass_balance",
+  "execution_mode": "fixed_sequence",
+  "model_view_indices": [0],
+  "camera_resolution": 224,
+  "fps": 20,
+  "chunk": {
+    "start": 40,
+    "end": 120,
+    "stride": 2,
+    "observation_timing": "pre_step"
+  },
+  "tracking": {},
+  "support_actions": [
+    0,
+    14
+  ],
+  "source_script": "scripts/collect_libero_mass_balance_30ratio_combined_split_lerobot_2026-09-02_hai-machine.py",
+  "source_config": "configs/mass_balance_workspace_random_30ratio_15support_450eps_combined_split_2026-09-02_hai-machine.json",
+  "inference_config": "configs/inference/sim_mass_balance.yaml",
+  "default_case": {
+    "ratio_index": 9,
+    "reference_support_index": 7
+  },
+  "physics": {
+    "variant": "workspace_random_combined_train20_test10",
+    "crossbar_mass_kg": 0.024,
+    "combined_end_mass_kg": 0.18,
+    "end_mass_offset_m": 0.15,
+    "friction_mu": 0.45,
+    "pregrip_unrecorded_steps": 20,
+    "approach": [
+      0,
+      43
+    ],
+    "insert": [
+      44,
+      81
+    ],
+    "lift": [
+      82,
+      125
+    ],
+    "hold": [
+      126,
+      149
+    ],
+    "native_control_frequency_hz": 20,
+    "sampling_stride": 2,
+    "query_sample_count": 41,
+    "query_native_iteration_count": 81,
+    "feedback": "original delta=clip(4*(absolute_EEF_target-observed_EEF),phase_cap); zero rotation; native grip +1",
+    "recorded_actions": "absolute EEF XYZ, zero rotation, gripper-open 0; NOT observed EEF state",
+    "candidate_count": 15,
+    "support_range_m": [
+      -0.104,
+      0.104
+    ],
+    "common_prefix": "one original reference-support trajectory to frame 40, all candidates branch from this same live state"
+  }
+}

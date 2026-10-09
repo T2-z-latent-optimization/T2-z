@@ -1,0 +1,73 @@
+{
+  "task": "mass_collision",
+  "model_view_indices": [0],
+  "camera_resolution": 224,
+  "fps": 20,
+  "chunk": {
+    "start": 0,
+    "end": 60,
+    "stride": 1,
+    "observation_timing": "pre_step"
+  },
+  "tracking": {},
+  "support_actions": [
+    0,
+    4
+  ],
+  "native_last_frame": 59,
+  "source_script": "scripts/collect_libero_two_box_mass_linear_theory_30mass_noleak_lerobot_2026-08-27_hai-machine.py",
+  "source_config": "configs/libero_two_box_mass_linear_theory_30mass_noleak_2026-08-27_hai-machine.json",
+  "inference_config": "configs/inference/sim_mass_collision.yaml",
+  "default_case": {
+    "target_mass_kg": 0.25,
+    "reference_action_index": 0
+  },
+  "physics": {
+    "projectile_mass_kg": 0.25,
+    "friction_mu": 0.01,
+    "projectile_init_xy_m": [
+      -0.3,
+      0
+    ],
+    "target_init_xy_m": [
+      -0.12,
+      0
+    ],
+    "center_gap_m": 0.18,
+    "controller_translation_scale": 4,
+    "peaks": [
+      0.38,
+      0.42,
+      0.46,
+      0.56,
+      0.6,
+      0.68,
+      0.85,
+      0.9,
+      1
+    ],
+    "push_steps": [
+      6,
+      6,
+      6,
+      5,
+      4,
+      4,
+      3,
+      3,
+      3
+    ],
+    "profile": "0.7, plateau 1, 0.7",
+    "brake_profile": [
+      -0.8,
+      -0.8,
+      -0.4,
+      0,
+      0
+    ],
+    "native_recorded_rows": 60,
+    "evaluation_padding": "query frame 60 repeats recorded row 59, NOT another control step",
+    "no_leak": true,
+    "initial_pose": "canonical no-leak placement and reference-action height offset; never change pose after selection"
+  }
+}

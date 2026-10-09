@@ -1,0 +1,21 @@
+# Overlay packages only. Torch and simulator packages are inherited read-only
+# from this machine's TTT4dynamics environment by the setup script.
+accelerate==1.15.0
+cffi==2.1.1
+cryptography==50.0.2
+diffsynth==2.1.6
+ftfy==6.3.1
+huggingface-hub==0.36.2
+modelscope==1.40.1
+modelscope-hub==0.4.5
+numpy==1.26.4
+pandas==2.2.3
+peft==0.18.1
+pycparser==3.0
+python-dateutil==2.9.0.post0
+sentencepiece==0.2.2
+tokenizers==0.22.2
+transformers==4.57.6
+typing-extensions==4.16.0
+tzdata==2026.4
+wcwidth==0.9.1

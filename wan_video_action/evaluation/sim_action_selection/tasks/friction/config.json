@@ -1,0 +1,62 @@
+{
+  "task": "friction",
+  "camera_resolution": 224,
+  "fps": 20,
+  "chunk": {
+    "start": 65,
+    "end": 105,
+    "stride": 1,
+    "observation_timing": "pre_step"
+  },
+  "tracking": "configs/evaluation/appearance_tracking.yaml",
+  "execution_mode": "fixed_sequence",
+  "support_actions": [
+    0,
+    4
+  ],
+  "source_script": "scripts/collect_libero_push_box_event_tap_segmented80_10action_lerobot_2026-07-05_hai-machine.py",
+  "source_config": "configs/libero_push_box_70fric_9action_fixed_scene_highforce_2026-07-02_hai-machine.json",
+  "inference_config": "configs/inference/sim_pushbox_friction.yaml",
+  "default_case": {
+    "friction_mu": 0.05,
+    "reference_action_index": 0
+  },
+  "physics": {
+    "friction_schedule": "[0.002,0.05)x30 + [0.05,0.15)x40 + [0.15,0.20]x10",
+    "friction_spin": 0.004,
+    "friction_roll": 0.0001,
+    "offset_x_m": -0.16,
+    "approach_steps": 35,
+    "descend_steps": 35,
+    "push_start": 70,
+    "peak_actions": [
+      0.08,
+      0.11,
+      0.14,
+      0.17,
+      0.21,
+      0.26,
+      0.32,
+      0.34,
+      0.36,
+      0.5
+    ],
+    "push_steps": [
+      16,
+      12,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "controller": "original OSC_POSE normalized XYZ deltas; zero rotation; original closed gripper",
+    "controller_scale": 10,
+    "scale_ramp_steps": 2,
+    "event_trigger": "displacement>0.001m or |vx|>0.03m/s; brake when |vx|>=max(0.03,2.2*A) or 3 frames after contact",
+    "after_event": "fixed action sequence controls braking; detected events are diagnostic only"
+  }
+}

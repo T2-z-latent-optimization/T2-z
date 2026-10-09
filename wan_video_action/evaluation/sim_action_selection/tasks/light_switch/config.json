@@ -1,0 +1,58 @@
+{
+  "task": "light_switch",
+  "model_view_indices": [
+    0
+  ],
+  "camera_resolution": 224,
+  "fps": 30,
+  "chunk": {
+    "start": 0,
+    "end": 32,
+    "stride": 1,
+    "observation_timing": "post_step"
+  },
+  "tracking": {},
+  "support_actions": [
+    0,
+    1
+  ],
+  "source_script": "scripts/collect_causal_light_switch_independent_controls_random8_lerobot_hai_machine.py",
+  "inference_config": "configs/inference/sim_light_switch.yaml",
+  "default_case": {
+    "causal_class": "red_only",
+    "initial_lamp_on": false,
+    "decision_button": "blue"
+  },
+  "physics": {
+    "backend": "robomme_benchmark / ManiSkill / SAPIEN",
+    "env_id": "CausalLightSwitchDIYHaiMachine",
+    "control_mode": "pd_joint_pos",
+    "button_positions_xy_m": {
+      "red": [
+        -0.12,
+        -0.055
+      ],
+      "blue": [
+        -0.12,
+        0.055
+      ]
+    },
+    "button_travel_m": 0.012,
+    "button_spring": 800,
+    "button_damping": 40,
+    "press_threshold_m": 0.005,
+    "release_threshold_m": 0.002,
+    "causal_classes": [
+      "neither",
+      "red_only",
+      "blue_only",
+      "both"
+    ],
+    "native_control_timestep": "read from original environment; NEVER substitute the 30fps video rate",
+    "observation_alignment": "Current native post-step RGB and its EEF command, followed by the planned native commands.",
+    "candidate_planning": "original screw retries / RRT fallback, original joint velocity and acceleration limits; pure kinematics, no candidate simulation",
+    "decision_boundary": "Pause during the planned button descent, with press_lead_steps native path commands remaining; no event annotations or prerecorded observations.",
+    "action": "original FK absolute EEF XYZ + temporally unwrapped Euler XYZ + gripper [-1,+1]"
+  },
+  "press_lead_steps": 23
+}

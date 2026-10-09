@@ -1,0 +1,14 @@
+{
+  "task": "mass_collision",
+  "outcome_kind": "point",
+  "object_index": 0,
+  "terminal_window": 5,
+  "missing_prediction_policy": "exclude_incomplete",
+  "aggregation": "equal_reachable_decisions",
+  "nearest_tiebreak": "action_index_string",
+  "targets": [
+    {"name": "short", "kind": "rectangle", "region": [0.43, 0.57, 0.62, 0.72], "selection": "nearest", "score": "target_reach"},
+    {"name": "medium", "kind": "rectangle", "region": [0.43, 0.57, 0.75, 0.86], "selection": "nearest", "score": "target_reach"},
+    {"name": "long", "kind": "rectangle", "region": [0.42, 0.58, 0.92, 1.0], "selection": "first_reaching", "fallback": "nearest", "score": "minimum_reaching", "max_steps_above_minimum": 1}
+  ]
+}

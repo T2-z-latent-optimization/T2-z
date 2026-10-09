@@ -1,0 +1,16 @@
+method: appearance
+parameters:
+  roi_y_min: 82
+  blue_minus_red: 0.035
+  blue_minus_green: 0.008
+  minimum_saturation: 0.16
+  maximum_value: 0.72
+  minimum_area: 8
+  maximum_area: 700
+  maximum_width: 45
+  maximum_height: 55
+  maximum_tracking_jump_px: 64.0
+  offscreen_min_y: 185.0
+  initial_x: 118.0
+  initial_y: 103.0
+  offscreen_behavior: bottom_center

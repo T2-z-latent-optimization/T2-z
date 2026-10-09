@@ -1,0 +1,25 @@
+method: color
+parameters:
+  roi_y_min: 82
+  minimum_saturation: 0.16
+  maximum_value: 0.72
+  minimum_area: 8
+  maximum_area: 700
+  maximum_width: 45
+  maximum_height: 55
+  maximum_tracking_jump_px: 64.0
+  offscreen_min_y: 185.0
+  initial_x: 118.0
+  initial_y: 103.0
+  primary_minus_first: 0.035
+  primary_minus_second: 0.008
+  primary_channel: 2
+  comparison_channels: [0, 1]
+  offscreen_velocity_min_y: 160.0
+  offscreen_velocity_threshold: 2.0
+  recent_history_frames: 4
+  color_score_weight: 80.0
+  area_score_cap: 180.0
+  area_score_divisor: 40.0
+  continuity_score_divisor: 35.0
+  position_score_divisor: 180.0

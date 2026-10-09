@@ -1,0 +1,49 @@
+{
+  "task": "multi_background",
+  "execution_mode": "fixed_sequence",
+  "camera_resolution": 224,
+  "fps": 20,
+  "chunk": {
+    "start": 65,
+    "end": 105,
+    "stride": 1,
+    "observation_timing": "pre_step"
+  },
+  "tracking": "configs/evaluation/contrast_tracking.yaml",
+  "support_actions": [
+    0,
+    4
+  ],
+  "source_script": "scripts/collect_libero_plus_push_box_segmented40_3env_matched_physics_lerobot_2026-07-27_hai-machine.py",
+  "source_config": "configs/libero_plus_push_box_event80_matched_physics_5randombackground_30friction_10action_1500eps_adaptive_end_2026-08-19_hai-machine.json",
+  "inference_config": "configs/inference/sim_multi_background.yaml",
+  "default_case": {
+    "friction_mu": 0.05,
+    "background_index": 0,
+    "reference_action_index": 0
+  },
+  "physics": {
+    "reference": "event80 exactly matched collision body, mass, inertia, robot initialization, approach and event-tap controller",
+    "background_count": 5,
+    "source_background_ids": [
+      13,
+      15,
+      17,
+      19,
+      29
+    ],
+    "friction_count": 30,
+    "friction_schedule": "[0.002,0.05)x11 + [0.05,0.15)x15 + [0.15,0.20]x4",
+    "canonical_object_mass_kg": 0.006193808164454399,
+    "canonical_collision_half_size_m": [
+      0.008936,
+      0.021336,
+      0.040608
+    ],
+    "visual_overlay": "non-colliding official assets synchronized to the canonical physical target",
+    "offset_x_m": -0.16,
+    "push_start": 70,
+    "query_rule": "identical 65..105 window regardless of background",
+    "native_episode_end": "fixed candidate action sequence through the query window; adaptive stopping retained only for event_stop mode"
+  }
+}

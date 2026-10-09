@@ -1,0 +1,35 @@
+{
+  "task": "gravity",
+  "camera_resolution": 224,
+  "fps": 20,
+  "chunk": {
+    "start": 0,
+    "end": 60,
+    "stride": 1,
+    "observation_timing": "pre_step"
+  },
+  "tracking": {},
+  "support_actions": [
+    0,
+    5
+  ],
+  "source_script": "scripts/collect_libero_change_gravity_segmented80_10speed_lerobot_v21_2026-07-10_hai-machine.py",
+  "inference_config": "configs/inference/sim_gravity.yaml",
+  "default_case": {
+    "gravity_mps2": 9.81
+  },
+  "physics": {
+    "gravity_schedule": "80 levels uniform in inverse square root, 0.25..50m/s^2",
+    "speeds": "10 linearly spaced levels, 0.20..1.40m/s",
+    "integrator": "original RK4 with original guided mj_step hook",
+    "physics_timestep_s": 0.002,
+    "launch_time_s": 0.4,
+    "launch_marker_frame": 8,
+    "first_launched_observation": 9,
+    "guide_release_x_m": 0.027,
+    "guide_z_m": 0.25,
+    "object_mass_kg": 0.2,
+    "recording_end": "first table-contact frame + 6 frames; repeat last frame if query exceeds native episode",
+    "action_semantics": "recorded launcher vx parameter, not a robot EEF delta"
+  }
+}

@@ -1,0 +1,6 @@
+model_name: Wan2.2-TI2V-5B
+modules:
+  dit: diffusion_pytorch_model.safetensors.index.json
+  text: models_t5_umt5-xxl-enc-bf16.pth
+  vae: Wan2.2_VAE.pth
+tokenizer_subdir: google

@@ -1,0 +1,16 @@
+{
+  "task": "light_switch",
+  "outcome_kind": "binary",
+  "object_index": 0,
+  "terminal_window": 5,
+  "light_threshold": 0.35,
+  "eligibility": "distinct_binary_outcomes",
+  "missing_prediction_policy": "exclude_incomplete",
+  "aggregation": "equal_reachable_decisions",
+  "nearest_tiebreak": "action_index_string",
+  "action_index_labels": {"0": "red", "1": "blue"},
+  "targets": [
+    {"name": "on", "kind": "binary", "value": true, "selection": "nearest", "score": "target_reach"},
+    {"name": "off", "kind": "binary", "value": false, "selection": "nearest", "score": "target_reach"}
+  ]
+}
