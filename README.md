@@ -8,13 +8,13 @@
 </p>
 
 <p align="center">
-  Chenyuan Zhou<sup>1*</sup>, Yining Hong<sup>1*</sup>, Huang Huang<sup>1‡</sup>, Yunfan Jiang<sup>1‡</sup>, Wenlong Huang<sup>1‡</sup>, David Held<sup>2</sup>,<br>
+  Chenyuan Zhou<sup>1*</sup>, Yining Hong<sup>1*</sup>, Huang Huang<sup>1♡</sup>, Yunfan Jiang<sup>1♡</sup>, Wenlong Huang<sup>1♡</sup>, David Held<sup>2</sup>,<br>
   Vitor Campagnolo Guizilini<sup>3</sup>, Yue Wang<sup>4</sup>, Li Fei-Fei<sup>1</sup>, Jiajun Wu<sup>1†</sup>, Leonidas Guibas<sup>1†</sup>, Yejin Choi<sup>1†</sup>
 </p>
 
 <p align="center">
-  <sup>1</sup> Stanford &nbsp; <sup>2</sup> Amazon &nbsp; <sup>3</sup> Toyota Research Institute &nbsp; <sup>4</sup> University of Southern California<br>
-  <sup>*</sup> Equal contribution &nbsp; <sup>‡</sup> Joint second authors &nbsp; <sup>†</sup> Equal advising
+  <sup>1</sup> Stanford &nbsp; <sup>2</sup> CMU &nbsp; <sup>3</sup> Toyota Research Institute &nbsp; <sup>4</sup> University of Southern California<br>
+  <sup>*</sup> Co-First Contribution &nbsp; <sup>♡</sup> Co-Second Contribution &nbsp; <sup>†</sup> Equal Advising
 </p>
 
 <p align="center">
