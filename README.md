@@ -9,7 +9,7 @@
 
 <p align="center">
   Chenyuan Zhou<sup>1*</sup>, Yining Hong<sup>1*</sup>, Huang Huang<sup>1‡</sup>, Yunfan Jiang<sup>1‡</sup>, Wenlong Huang<sup>1‡</sup>, David Held<sup>2</sup>,<br>
-  Vitor Campagnolo Guizilini<sup>3</sup>, Yue Wang<sup>4</sup>, Li Fei-Fei<sup>1</sup>, Jiajun Wu<sup>1</sup>, Leonidas Guibas<sup>1†</sup>, Yejin Choi<sup>1†</sup>
+  Vitor Campagnolo Guizilini<sup>3</sup>, Yue Wang<sup>4</sup>, Li Fei-Fei<sup>1</sup>, Jiajun Wu<sup>1†</sup>, Leonidas Guibas<sup>1†</sup>, Yejin Choi<sup>1†</sup>
 </p>
 
 <p align="center">
