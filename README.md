@@ -1,7 +1,7 @@
 <h1 align="center">T2-z: Test-Time Optimization of Environment Latents<br>for Robotic World Models</h1>
 
 <p align="center">
-  <img src="assets/badge-arxiv.svg" alt="arXiv: Coming soon">
+  <a href="https://arxiv.org/abs/2610.22364"><img src="assets/badge-arxiv.svg" alt="arXiv: 2610.22364"></a>
   <a href="https://t2-z-latent-optimization.github.io/"><img src="assets/badge-project.svg" alt="Project Page"></a>
   <a href="https://huggingface.co/datasets/huagailuowen/T2-z-datasets"><img src="assets/badge-datasets.svg" alt="Hugging Face Datasets"></a>
   <a href="LICENSE"><img src="assets/badge-license.svg" alt="License: Apache-2.0"></a>
@@ -201,7 +201,10 @@ If you find T2-z useful in your research, please cite:
             and Wang, Yue and Li, Fei-Fei and Wu, Jiajun and Guibas, Leonidas
             and Choi, Yejin},
   year   = {2026},
-  url    = {https://t2-z-latent-optimization.github.io/}
+  eprint = {2610.22364},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.RO},
+  url    = {https://arxiv.org/abs/2610.22364}
 }
 ```
 
